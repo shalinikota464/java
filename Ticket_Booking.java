@@ -53,8 +53,8 @@ public class Ticket_Booking {
                 Seats[i][j]="Available";
             }    
         }
-    }
-    public static void main(String[] args) 
+    }  
+      public static void main(String[] args) 
     {
         Ticket_Booking Gurunatha= new Ticket_Booking();
         Scanner get = new Scanner(System.in);

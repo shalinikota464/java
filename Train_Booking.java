@@ -1,13 +1,9 @@
 import java.util.Scanner;
-
-public class Train_Booking {
-
-    static String Seats[][] = new String[10][4];
-
-    static void View() {
+public class  Train_Booking{
+ static String Seats[][] = new String[10][4];
+     static void View() {
         System.out.println("\nTrain Seat Status:\n");
-
-        for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < 10; i++) {
             System.out.print("Row " + (i + 1) + " : ");
 
             for (int j = 0; j < 4; j++) {
@@ -15,8 +11,7 @@ public class Train_Booking {
             }
             System.out.println("\n");
         }
-
-        Scanner sc = new Scanner(System.in);
+         Scanner sc = new Scanner(System.in);
         System.out.print("Do you want to book a ticket (Yes/No): ");
         String choice = sc.nextLine();
 
@@ -26,8 +21,7 @@ public class Train_Booking {
             System.out.println("Thank you for visiting.");
         }
     }
-
-    static void Booking() {
+        static void Booking() {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter Row Number (1-10): ");
@@ -35,8 +29,7 @@ public class Train_Booking {
 
         System.out.print("Enter Seat Number (1-4): ");
         int col = sc.nextInt() - 1;
-
-        if (row >= 0 && row < 10 && col >= 0 && col < 4) {
+          if (row >= 0 && row < 10 && col >= 0 && col < 4) {
 
             if (Seats[row][col].equals("Available")) {
                 Seats[row][col] = "Booked";
